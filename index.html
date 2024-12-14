@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Landing Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+  <header class="bg-gray-800 text-white py-4 px-6 flex justify-between items-center">
+    <h1 class="text-2xl font-bold">My Blog</h1>
+    <nav>
+      <ul class="flex space-x-4">
+        <li><a href="#featured" class="hover:text-blue-400">Featured</a></li>
+        <li><a href="#categories" class="hover:text-blue-400">Categories</a></li>
+        <li><a href="#recent" class="hover:text-blue-400">Recent Posts</a></li>
+        <li><a href="#newsletter" class="hover:text-blue-400">Subscribe</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="featured" class="py-12 bg-gray-200">
+    <h2 class="text-3xl font-semibold text-center mb-8">Featured Posts</h2>
+    <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto ">
+      <div class="bg-white shadow rounded  sm:mx-5 ">
+        <img src="https://images04.nicepage.com/feature/583347/blog-category.jpg" alt="Featured Post 1">
+        <div class="p-4">
+          <h3 class="text-xl font-bold mb-2">Title 1</h3>
+          <p class="text-sm text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, at?</p>
+        </div>
+      </div>
+      <div class="bg-white shadow rounded sm:mx-5 ">
+        <img src="https://images04.nicepage.com/feature/583347/blog-category.jpg" alt="Featured Post 2">
+        <div class="p-4">
+          <h3 class="text-xl font-bold mb-2">Title 2</h3>
+          <p class="text-sm text-gray-600">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit, nam!</p>
+        </div>
+      </div>
+      <div class="bg-white shadow rounded  sm:mx-5 ">
+        <img src="https://images04.nicepage.com/feature/583347/blog-category.jpg" alt="Featured Post 3">
+        <div class="p-4">
+          <h3 class="text-xl font-bold mb-2">Title 3</h3>
+          <p class="text-sm text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, iure!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="categories" class="py-12 bg-gray-100">
+    <h2 class="text-3xl font-semibold text-center mb-8">Categories</h2>
+    <div class="flex flex-wrap justify-center gap-4">
+      <span class="bg-blue-100 text-blue-600 px-4 py-2 rounded-full text-lg font-semibold">Tech</span>
+      <span class="bg-green-100 text-green-600 px-4 py-2 rounded-full text-lg font-semibold">Lifestyle</span>
+      <span class="bg-purple-100 text-purple-600 px-4 py-2 rounded-full text-lg font-semibold">Travel</span>
+      <span class="bg-yellow-100 text-yellow-600 px-4 py-2 rounded-full text-lg font-semibold">Health</span>
+    </div>
+  </section>
+
+  <section id="recent" class="py-12 bg-gray-200">
+    <h2 class="text-3xl font-semibold text-center mb-8">Recent Posts</h2>
+    <div class="max-w-4xl mx-auto space-y-6">
+      <div class="flex justify-between items-center bg-white shadow rounded p-4">
+        <h3 class="text-lg font-bold">Recent Post 1</h3>
+        <span class="text-sm text-gray-500">Dec 12, 2024</span>
+      </div>
+      <div class="flex justify-between items-center bg-white shadow rounded p-4">
+        <h3 class="text-lg font-bold">Recent Post 2</h3>
+        <span class="text-sm text-gray-500">Dec 10, 2024</span>
+      </div>
+      <div class="flex justify-between items-center bg-white shadow rounded p-4">
+        <h3 class="text-lg font-bold">Recent Post 3</h3>
+        <span class="text-sm text-gray-500">Dec 8, 2024</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="newsletter" class="py-12 bg-gray-100">
+    <h2 class="text-3xl font-semibold text-center mb-6">Subscribe to Our Newsletter</h2>
+    <form class="max-w-lg mx-auto bg-white p-6 shadow rounded">
+      <div class="mb-4">
+        <label for="email" class="block font-semibold mb-2">Email Address</label>
+        <input type="email" id="email" class="w-full p-3 border rounded" placeholder="Your Email">
+      </div>
+      <button type="submit" class="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600">Subscribe</button>
+    </form>
+  </section>
+
+  <footer class="bg-gray-800 text-white py-6">
+    <div class="max-w-3xl mx-auto flex justify-between items-center">
+      <div class="text-sm">&copy; 2024 BALBOULI. All rights reserved.</div>
+      <div class="flex space-x-4">
+        <a href="#" class="hover:text-blue-400">Twitter</a>
+        <a href="#" class="hover:text-blue-400">Facebook</a>
+        <a href="#" class="hover:text-blue-400">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
